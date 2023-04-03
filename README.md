@@ -16,3 +16,4 @@ This is script to classify environmental recording using convolutional neural ne
 
 # Future work
 
+In future, CNN based on inception network and residual netowrk will be implemented.
