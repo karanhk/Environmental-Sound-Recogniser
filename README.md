@@ -35,3 +35,7 @@ And the model categorized it as `rain` sound.
 # Future work
 
 In future, i'm looking forward to train CNN model based on inception network and residual network and to improve model's accuracy.
+
+# Connect with me
+
+Give your feedback at : karanhadiyal65@gmail.com
