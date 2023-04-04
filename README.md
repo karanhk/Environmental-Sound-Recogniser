@@ -2,13 +2,13 @@
 
 ## Abstract
 
-This repository classifies audio recording into 50 sound categories with **70% accuracy** using convolutional neural network (CNN). It creates spectrogram from audio file by `librosa` library and classifies that spectrogram by using CNN.
+This repository classifies audio recording into 50 sound categories with **70% accuracy** using convolutional neural network (CNN). It creates spectrogram from audio file by using `librosa` library and classifies that spectrogram by using CNN.
 
 ## Detailed
 
 This is a repository to classify audio recording into 50 sound categories including animal sound, natural sound, human non-speech sound, domestic sound, urban noises and many more. It is trained on [esc50]("https://www.kaggle.com/datasets/mmoreaux/environmental-sound-classification-50") dataset.
 
-This repository uses `librosa` library to convert sound wave to digital audio signal and then converts that singal to spectrogram. This spectrogram is then sent to proposed CNN model. The CNN model is implemented using `Tensorflow`, it has 6 convolutional layers, 3 max pooling layers and 2 fully connected layers. The model is divied into 3 convolutional blocks. Each block has convolutional layer, max pooling layer and convolutional layer in sequence. Below is the screenshot of model summary.
+This repository uses `librosa` library to convert sound wave to digital audio signal and then converts that singal to spectrogram. This spectrogram is then sent to proposed CNN model. The CNN model is implemented using `Tensorflow`, it has 6 convolutional layers, 3 max pooling layers and 2 fully connected layers. The model is divided into 3 convolutional blocks. Each block has convolutional layer, max pooling layer and convolutional layer in sequence. Below is the screenshot of model summary.
 
 ![model summary]("https://drive.google.com/file/d/1hcZA51QmftX2GK8UVpq1vxB2rSPPnDUd/view?usp=sharing")
 
