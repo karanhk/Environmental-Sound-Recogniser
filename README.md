@@ -10,17 +10,19 @@ This is a repository to classify audio recording into 50 sound categories includ
 
 This repository uses `librosa` library to convert sound wave to digital audio signal and then converts that singal to spectrogram. This spectrogram is then sent to proposed CNN model. The CNN model is implemented using `Tensorflow`, it has 6 convolutional layers, 3 max pooling layers and 2 fully connected layers. The model is divided into 3 convolutional blocks. Each block has convolutional layer, max pooling layer and convolutional layer in sequence. Below is the screenshot of model summary.
 
-![model summary]("https://drive.google.com/file/d/1hcZA51QmftX2GK8UVpq1vxB2rSPPnDUd/view?usp=sharing")
+<img width="493" alt="Screenshot 2023-04-04 at 9 59 08 AM" src="https://user-images.githubusercontent.com/76246981/230334455-7ba1f1e5-6dd3-4af7-8930-91cf484ce1c0.png">
 
 This repository contains 6 files. The `implementation.ipynb` is the implementation code of the model, the `custom.ipynb` is to load the model and run it on custom audio file, the `requirments.txt` is the txt file containing requirments to run the model, the `categories.csv` contains categories of classification and the `instructions.txt` contains instructions to better understand this repository.
 
 # Highlights
 
 The input is audio file. Here is the audio input given to the model.
-[Input wav file]("https://drive.google.com/drive/u/1/folders/1mW_QaB1f0xdvfTTPvoRR1k393CN_DzdC")
+
+<a href="https://drive.google.com/drive/u/1/folders/1mW_QaB1f0xdvfTTPvoRR1k393CN_DzdC">Audio file</a>
 
 The spectrogram generated is 
-![Spectrogram]("https://drive.google.com/drive/u/1/folders/1mW_QaB1f0xdvfTTPvoRR1k393CN_DzdC")
+
+<img width="540" alt="Screenshot 2023-04-04 at 9 47 34 AM" src="https://user-images.githubusercontent.com/76246981/230334705-912799b3-9e9a-4e14-8086-a77097f2490b.png">
 
 And the model categorized it as `rain` sound.
 
