@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This repository classifies audio recording into 50 sound categories with **70% accuracy** using convolutional neural network (CNN). It creates spectrogram from audio file by using `librosa` library and classifies that spectrogram by using CNN.
+This repository proposes a CNN model which recognises sound from 50 different categories including nature sound, human non speech sound, urban sound, etc. with **70% accuracy**. The model is trained to classify the specturm into 50 different categories. The spectrum is achieved from wav file.
 
 ## Detailed
 
