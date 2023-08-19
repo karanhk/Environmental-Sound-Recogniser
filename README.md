@@ -20,15 +20,21 @@ The model structure is :
 
 <img width="493" alt="Screenshot 2023-04-04 at 9 59 08 AM" src="https://user-images.githubusercontent.com/76246981/230334455-7ba1f1e5-6dd3-4af7-8930-91cf484ce1c0.png">
 
-The input is audio file. Here is the audio input given to the model.
+The audio of keyboard typing sound : 
 
-<a href="https://drive.google.com/drive/u/1/folders/1mW_QaB1f0xdvfTTPvoRR1k393CN_DzdC">Audio file</a>
+<a href="https://drive.google.com/file/d/1HzEGcBEzgElgmD3dFsvwIUpax3AMrfWY/view?usp=sharing">Audio file</a>
 
-The spectrogram generated is 
+The waveform : 
 
-<img width="540" alt="Screenshot 2023-04-04 at 9 47 34 AM" src="https://user-images.githubusercontent.com/76246981/230334705-912799b3-9e9a-4e14-8086-a77097f2490b.png">
+![waveform](https://github.com/karanhk/Environmental-sound-recognition/assets/76246981/4757eb37-af85-4559-bd97-792d235b4ccd)
 
-And the model categorized it as `rain` sound.
+The spectrogram : 
+
+![spectrogram](https://github.com/karanhk/Environmental-sound-recognition/assets/76246981/d4de9aab-de69-443e-8276-c22ba7cc61dd)
+
+The processed spectrum :
+
+![spectrum](https://github.com/karanhk/Environmental-sound-recognition/assets/76246981/dbdaafb7-443b-4195-ad7c-0cae708c6e99)
 
 # Prerequisites
 
