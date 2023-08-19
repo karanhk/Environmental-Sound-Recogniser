@@ -2,19 +2,23 @@
 
 ## Abstract
 
-This repository proposes a CNN model which recognises sound from 50 different categories including nature sound, human non speech sound, urban sound, etc. with **70% accuracy**. The model is trained to classify the specturm into 50 different categories. The spectrum is achieved from wav file.
+This repository proposes a Convolutional Neural Network (CNN) model which recognises sound from 50 different categories including nature sound, human non speech sound, urban sound, etc. with **70% accuracy**. The wav file is processed and converted into spectrum of size (11,220) and model classifies each spectrum according to label.
 
 ## Detailed
 
-This is a repository to classify audio recording into 50 sound categories including animal sound, natural sound, human non-speech sound, domestic sound, urban noises and many more. It is trained on [esc50]("https://www.kaggle.com/datasets/mmoreaux/environmental-sound-classification-50") dataset.
+The model is trained on [esc50]("https://www.kaggle.com/datasets/mmoreaux/environmental-sound-classification-50") dataset which contains 2002 wav files of 50 different categories including nature sound, animal sound, human non speech sound, urban sound, domestic sound, bird sound, etc. The wav file is converted into spectrum of shape (11,220) and the model is trained on this spectrum.
 
-This repository uses `librosa` library to convert sound wave to digital audio signal and then converts that singal to spectrogram. This spectrogram is then sent to proposed CNN model. The CNN model is implemented using `Tensorflow`, it has 6 convolutional layers, 3 max pooling layers and 2 fully connected layers. The model is divided into 3 convolutional blocks. Each block has convolutional layer, max pooling layer and convolutional layer in sequence. Below is the screenshot of model summary.
+This repository uses `librosa` library to read wav file at the sample rate of 44100 Hz. Each wav file has 2205000 samples. This repository uses first 220000 samples and creates 220 spectrograms with window size of 1000. Hence each spectrogram is of size 1000 samples and there are such 220 spectrograms, now each spectorgram is divided into 11 different channels. The perticular channel takes first and last k points and processes with whole spectrogram. Hence for one spectrogram containing 1000 samples, it has different values for each channels, there are 11 channels total so one spectrogram is divided into 11 points and there are total 220 spectrograms. Hence ultimelty we get the spectrum of shape (11,220). This spectrum is for one wav file.
 
-<img width="493" alt="Screenshot 2023-04-04 at 9 59 08 AM" src="https://user-images.githubusercontent.com/76246981/230334455-7ba1f1e5-6dd3-4af7-8930-91cf484ce1c0.png">
+Now for each wav file the spectrum is created and saved in form of numpy array into `CSV`. This `CSV` is the training dataset for model. The proposed `CNN` model has 6 convolutional layers, 3 pooling layers, 2 fully connected layers with selu activation.
 
-This repository contains 6 files. The `implementation.ipynb` is the implementation code of the model, the `custom.ipynb` is to load the model and run it on custom audio file, the `requirments.txt` is the txt file containing requirments to run the model, the `categories.csv` contains categories of classification and the `instructions.txt` contains instructions to better understand this repository.
+This repository contains 8 files. The `implementation.ipynb` is the implementation code of the model, the `custom.ipynb` is to load the model and run it on custom wav file, the `wav2spectrogram.ipynb` reads the wav file and convert into spectrogram, the `wav2spectrum.ipynb` reads the wav and converts it into processed spectrum, the `requirments.txt` is the txt file containing requirments to run the model, the `categories.csv` contains categories of classification and the `instructions.txt` contains instructions to better understand this repository.
 
 # Highlights
+
+The model structure is : 
+
+<img width="493" alt="Screenshot 2023-04-04 at 9 59 08 AM" src="https://user-images.githubusercontent.com/76246981/230334455-7ba1f1e5-6dd3-4af7-8930-91cf484ce1c0.png">
 
 The input is audio file. Here is the audio input given to the model.
 
