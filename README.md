@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This repository proposes a Convolutional Neural Network (CNN) based model which recognises sound from 50 different categories including nature sound, human non speech sound, urban sound, etc. with **70% accuracy**. The wav file is processed and converted into spectrum of size (11,220) and model classifies each spectrum according to label.
+This repository proposes a Convolutional Neural Network (CNN) based model which recognises sound of 50 different categories including nature sound, human non speech sound, urban sound, etc. with **70% accuracy**. The model reads wav file and predicts the label. The wav file is processed and converted into spectrum of size (11,220) and model classifies each spectrum according to label.
 
 This repository contains 8 files. The `implementation.ipynb` is the implementation code of the model, the `custom.ipynb` is to load the model and run it on custom wav file, the `wav2spectrogram.ipynb` reads the wav file and convert into spectrogram, the `wav2spectrum.ipynb` reads the wav and converts it into processed spectrum, the `requirments.txt` is the txt file containing requirments to run the model, the `categories.csv` contains categories of classification and the `instructions.txt` contains instructions to better understand this repository.
 
