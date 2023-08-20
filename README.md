@@ -42,9 +42,10 @@ The processed spectrum :
 
 # Getting started
 
-1. Download the repository and unzip it.
+1. Clone the repository.
 2. Install necessary packages using `pip install -r requirements.txt`.
-3. Read the `instructions.txt` for better understanding of repository.
+3. Run the `custom.ipynb` file to use the pretrained model on custom wav file, change path of model and wav file accordingly.
+4. Read the `instructions.txt` for better understanding of repository.
 
 # Future work
 
