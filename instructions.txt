@@ -1,11 +1,14 @@
-This repository classifies audio recording into 50 categories of environmental sound.
+Read the instructions carefully to understand the repository.
 
-The implementation.ipynb file is the implementation of model in python using tensorflow and librosa.
-Run this file to implement the model again, all lines in this file are self explainatory.
+General insights : 
 
-The custom.ipynb file is to load the model and run it on custom audio file. You can load your trained model also and run on your custom audio file. In this file also
-all lines are self explainatory.
+1. The 'highlights' folder contains spectrogram, spectrum and wav form along with corrosponding wav file.
+2. The 'workbooks' folder contains the implementation workbooks.
+3. The 'other' folder contains trained model and labels.
 
-The model.h5 is pretrained model which you can directly use.
+Workbooks : 
 
-The categories.csv is the csv file containing the categories, the index of category is the target (y_train) of model.
+1. The wav2spectrogram.ipynb converts wav file to spectrogram in form of png, give path of wav file and spectrogram png accordingly and run the workbook, it will create the spectrogram. In model training the spectrogram is not used, it is for information purpose only.
+2. The wav2spectrum.ipynb converts wav file to spectrum, change the path of wav file folder and spectrum dataset accordingly. The spectrum created for each wav will be stored in a CSV and this CSV is the final dataset for model.
+3. The implementation.ipynb is the main file, it trains the CNN model and saves it. Change the path of model accordingly.
+4. The custom.ipynb uses the custom wav file and recognises the sound. Change the path of custom wav file accordingly. Note that the model will read the wav file upto first 5 seconds.
