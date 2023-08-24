@@ -56,7 +56,7 @@ In future, i'm looking forward to train CNN model based on inception network and
 
 # License
 
-This project is licensed under the Apache 2.0 License - see the <a href="[https://drive.google.com/file/d/1HzEGcBEzgElgmD3dFsvwIUpax3AMrfWY/view?usp=sharing](https://github.com/karanhk/Environmental-Sound-Recogniser/blob/main/LICENSE)">LICENSE</a>
+This project is licensed under the Apache 2.0 License - see the <a href="https://github.com/karanhk/Environmental-Sound-Recogniser/blob/main/LICENSE">LICENSE</a>
 file for details
 
 # Connect with me
