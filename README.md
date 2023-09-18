@@ -22,7 +22,7 @@ The proposed Convolutional Neural Netowrk (CNN) based model has 6 convolutional 
 
 Before jumping into how to create spectrum, let us first understand the structure of wav file and how it is read in Python. The wav file is collection of samples like image is collection of pixels. The sample rate is the number of sample used per second to record analog audio and store in the form of digital audio. Here the sample rate is 44100 Hz and each wav file is of 5 seconds, so each wav file has 220500 samples. The wav to spectrum follows the path : Wav -> Waveform -> Spectrogram -> Spectrum.
 
-The wav file of keyboard typing sound : <a href="https://drive.google.com/file/d/1HzEGcBEzgElgmD3dFsvwIUpax3AMrfWY/view?usp=sharing">Wav file</a>
+The wav file of keyboard typing sound : <a href="https://drive.google.com/file/d/1TZlnt31opbRcwqSYLFSXRiQz_BVP7hJL/view?usp=sharing">Wav file</a>
 
 Now let us understand wav to waveform. The waveform is the distribution of amplitude vs time of wave file. We read wavefile in form of numpy array of size (220500,1) so first 440100 samples are for first second and second 440100 samples are for the 2nd second and so on. we divide the array by sample rate and get the array of shape (44100,5). The value at perticular index represents the amplitude, we plot the array to get the waveform. Below is the screenshot of the waveform. 
 
